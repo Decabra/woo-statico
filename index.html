@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <!-- Vendors Style-->
+<!--    <link rel="stylesheet" href="css/vendors_css.css">-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Style-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexer.css" type="text/css">
+    <link rel="stylesheet" href="css/custom_style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+    <aside id="blue_sect">
+       <div id="btn-container" class="fx-row justify-even">
+        <a class="butn" href="#/">example.com</a>
+        <a class="butn" href="#/">sample.com</a>
+        <a class="butn" href="#/">gamble.com</a>
+    </div>
+    </aside>
+    <main>
+        <section id="info" class="fx-row justify-center fx-nowrap">
+            <div id="bar-chart" class="fx-col-4">
+                <div class="title">Expenses</div>
+                <p class="ad-fb">Adword + Facebook.</p>
+                <img src="https://www.primefaces.org/sapphire-ng/assets/layout/images/dashboard/asset-stats.svg" alt="">
+            </div>
+            <div id="area-chart" class="fx-col-4">
+                <div class="title">Revenue</div>
+                <div class="number">26520 / day</div>
+                <img src="https://www.primefaces.org/sapphire-ng/assets/layout/images/dashboard/asset-graph.svg" alt="">
+            </div>
+            <div id="donut-chart" class="fx-col-4">
+                <div class="title">Metrics</div>
+                <div class="number">2,449,570</div>
+                <div class="fx-row">
+                    <div class="fx-col-4 p-0">
+                        <img src="https://www.primefaces.org/sapphire-ng/assets/layout/images/dashboard/asset-connectiongraph.svg" alt="">
+                    </div>
+                    <div class="fx-row fx-col fx-col-12">
+                        <div class="fx-row justify-between align-center">
+                            <div><span class="dot dot-green"></span><span class="st-rprt" >Profit</span></div>
+                            <div ><span>$644,421</span></div>
+                        </div>
+                        <div class="fx-row justify-between align-center">
+                            <div><span class="dot dot-red"></span><span class="st-rprt">Expenses</span></div>
+                            <div ><span>$537,777</span></div>
+                        </div>
+                        <div class="fx-row justify-between align-center">
+                            <div><span class="dot dot-orange"></span><span class="st-rprt">Shipping</span></div>
+                            <div ><span>$570,099</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="revenue" class="fx-row fx-nowrap align-fx-start">
+            <div class="report p-0">
+                <img style="width: 100%;" src="https://www.primefaces.org/sapphire-ng/assets/layout/images/dashboard/asset-profile.jpg" alt="">
+                <nav>
+                    <div class="nav nav-tabs text-center" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link fx-col-4 active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Day</a>
+                        <a class="nav-item nav-link fx-col-4" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Week</a>
+                        <a class="nav-item nav-link fx-col-4" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Month</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="fx-row m-t-3">
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-order"></div>
+                                <div class="userprofile-status">ORDERS</div>
+                                <div class="userprofile-value">190</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-profits"></div>
+                                <div class="userprofile-status">PROFITS</div>
+                                <div class="userprofile-value">$64</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-revenue"></div>
+                                <div class="userprofile-status">REVENUE</div>
+                                <div class="userprofile-value">$28</div>
+                            </div>
+                        </div>
+                        <div class="fx-row m-t-3">
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-expenses"></div>
+                                <div class="userprofile-status">ADWORD</div>
+                                <div class="userprofile-value">$190</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-expenses"></div>
+                                <div class="userprofile-status">FACEBOOK</div>
+                                <div class="userprofile-value">$64</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-ship"></div>
+                                <div class="userprofile-status">SHIPPING</div>
+                                <div class="userprofile-value">28</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="fx-row m-t-3">
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-order"></div>
+                                <div class="userprofile-status">ORDERS</div>
+                                <div class="userprofile-value">190</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-profits"></div>
+                                <div class="userprofile-status">PROFITS</div>
+                                <div class="userprofile-value">$64</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-revenue"></div>
+                                <div class="userprofile-status">REVENUE</div>
+                                <div class="userprofile-value">$28</div>
+                            </div>
+                        </div>
+                        <div class="fx-row m-t-3">
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-expenses"></div>
+                                <div class="userprofile-status">ADWORD</div>
+                                <div class="userprofile-value">$190</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-expenses"></div>
+                                <div class="userprofile-status">FACEBOOK</div>
+                                <div class="userprofile-value">$64</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-ship"></div>
+                                <div class="userprofile-status">SHIPPING</div>
+                                <div class="userprofile-value">28</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="fx-row m-t-3">
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-order"></div>
+                                <div class="userprofile-status">ORDERS</div>
+                                <div class="userprofile-value">190</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-profits"></div>
+                                <div class="userprofile-status">PROFITS</div>
+                                <div class="userprofile-value">$64</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-revenue"></div>
+                                <div class="userprofile-status">REVENUE</div>
+                                <div class="userprofile-value">$28</div>
+                            </div>
+                        </div>
+                        <div class="fx-row m-t-3">
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-expenses"></div>
+                                <div class="userprofile-status">ADWORD</div>
+                                <div class="userprofile-value">$190</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-expenses"></div>
+                                <div class="userprofile-status">FACEBOOK</div>
+                                <div class="userprofile-value">$64</div>
+                            </div>
+                            <div class="fx-col-4 text-center">
+                                <div class="userprofile-circle crcle-ship"></div>
+                                <div class="userprofile-status">SHIPPING</div>
+                                <div class="userprofile-value">28</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+<!--                <div class="fx-row m-t-3">
+                    <div class="fx-col-4 text-center">
+                        <div class="userprofile-circle crcle-order"></div>
+                        <div class="userprofile-status">ORDERS</div>
+                        <div class="userprofile-value">190</div>
+                    </div>
+                    <div class="fx-col-4 text-center">
+                        <div class="userprofile-circle crcle-profits"></div>
+                        <div class="userprofile-status">PROFITS</div>
+                        <div class="userprofile-value">64</div>
+                    </div>
+                    <div class="fx-col-4 text-center">
+                        <div class="userprofile-circle crcle-revenue"></div>
+                        <div class="userprofile-status">REVENUE</div>
+                        <div class="userprofile-value">28</div>
+                    </div>
+                </div>
+                <div class="fx-row m-t-3">
+                    <div class="fx-col-4 text-center">
+                        <div class="userprofile-circle crcle-expenses"></div>
+                        <div class="userprofile-status">ADWORD</div>
+                        <div class="userprofile-value">190</div>
+                    </div>
+                    <div class="fx-col-4 text-center">
+                        <div class="userprofile-circle crcle-expenses"></div>
+                        <div class="userprofile-status">FACEBOOK</div>
+                        <div class="userprofile-value">64</div>
+                    </div>
+                    <div class="fx-col-4 text-center">
+                        <div class="userprofile-circle crcle-ship"></div>
+                        <div class="userprofile-status">SHIPPING</div>
+                        <div class="userprofile-value">28</div>
+                    </div>
+                </div>-->
+            </div>
+            <div class="fx-col-8 p-0">
+                <div class="box line-chart">
+                    <div class="box-body">
+                        <h4 class="box-title">Overall Statistics</h4>
+                        <div>
+                            <canvas id="line-chart1" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/vendors.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/widget-charts2.js"></script>
+
+
+</body>
+</html>
