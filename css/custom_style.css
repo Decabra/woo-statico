@@ -151,15 +151,3 @@ a.butn:last-child{
 .crcle-ship {
     border-color: #ff8f00;
 }
-/*login section*/
-.login-sect{
-    background-color: #ffffff;
-    height: 500px;
-    border-radius: 5px;
-    border-bottom: 5px solid #457fca;
-    border-top: 5px solid #457fca;
-}
-button, .btn{
-    width: 40%;
-    float: right;
-}
