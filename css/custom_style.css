@@ -14,33 +14,36 @@ main{
 }
 #btn-container{
     height: 117px;
-    padding-top: 20px;
-    width: 100%;;
+    width: auto;
 }
 .butn{
-    padding: 12px 25px 10px;
-    height: 50px;
+    padding: 5px;
+    height: 30px;
     border-radius: 5px;
-    color: #fff;
-    transition: 0.2s
+    color: #1c1c1cc9;
+    font-size: 12px;
+    background-color: #eef0f8;
+    box-shadow: 5px 5px 5px 0 #c0c0c061;
+    transition: 0.2s;
 }
 .butn:hover{
     text-decoration: none;
-    color: #fff;
+    color: #1c1c1cc9;
     transform: translate(1px, 1px);
 }
 
-a.butn:first-child{
+.round-add-butn{
+    border-radius: 35px;
     background-color: #e91e63;
-    box-shadow: 5px 5px 5px 0 #e91e637a;
+    box-shadow: 0 0 15px 3px #e91e63db;
+    color: white;
+    width: 50px;
+    height: 50px;
 }
-a.butn:nth-child(2){
-    background-color: #c69500;
-    box-shadow: 5px 5px 5px 0 #c695007a;
-}
-a.butn:last-child{
-    background-color: orangered;
-    box-shadow: 5px 5px 5px 0 #ff45007a
+.round-add-butn:hover{
+    text-decoration: none;
+    color: #fff;
+    transform: translate(1px, 1px);
 }
 #info{
     margin-top: -120px;
@@ -81,13 +84,13 @@ a.butn:last-child{
     background-color: #ff9800;
 }
 #area-chart .number{
-    margin-bottom: 4.5em;
+    margin-bottom: 3.5em;
 }
 #donut-chart .number{
     margin-bottom: 2em;
 }
 .ad-fb{
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.3rem;
 }
 .st-rprt{
     margin-left: 7px;
@@ -99,7 +102,7 @@ a.butn:last-child{
 .report{
     width: 33.333%;
     margin-right: 15px;
-    height: 434px;
+    /*height: 434px;*/
     background-color: white;
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     border-radius: 5px;
@@ -150,4 +153,73 @@ a.butn:last-child{
 }
 .crcle-ship {
     border-color: #ff8f00;
+}
+.modal-footer button{
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+}
+#bar-chart img, #area-chart img{
+    width: 100%;
+}
+@media only screen and (min-width: 513px) and (max-width: 1024px){
+    main {
+        padding: 0 50px;
+    }
+    #area-chart{
+        margin-right: 0;
+    }
+    #bar-chart, #area-chart{
+        flex-grow: 1;
+    }
+    #donut-chart{
+        flex-grow: 3;
+        margin-top: 15px;
+    }
+    #info{
+        flex-wrap: wrap;
+    }
+    .fx-col-12 {
+        flex: 0 1 100%;
+    }
+    .fx-col-5{
+        flex: 0 1 33.3333%;
+    }
+}
+@media only screen and (max-width: 991px){
+    #revenue{
+        flex-wrap: wrap;
+    }
+    .report{
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    #revenue .fx-col-4{
+        flex: 0 1 33.3333%;
+    }
+    #revenue .fx-col-8{
+        flex: 0 1 100%;
+    }
+}
+@media only screen and (max-width: 512px){
+    main {
+        padding: 0 25px
+    }
+    #info{
+        flex-wrap: wrap
+    }
+    #area-chart{
+        margin: 15px 0 15px 0
+    }
+    .fx-col-4{
+        flex-basis: 25%;
+    }
+    .fx-col-12{
+        flex-basis: 100%;
+    }
+    #btn-container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
